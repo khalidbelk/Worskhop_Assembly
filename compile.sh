@@ -1,0 +1,18 @@
+#!/bin/sh
+## Workshop Khalid
+
+GREEN='\033[0;32m'
+
+SRC=$(ls *.asm)
+
+OBJ=$(echo "$SRC" | sed 's/\.asm/\.o/g')
+
+NAME="libasm.so"
+
+for file in $SRC; do
+    nasm -f elf64 -o ${file%.asm}.o $file
+done
+
+ld -shared -o $NAME $OBJ
+
+echo -e "Compilation complete${GREEN} ✔️${NC}"
