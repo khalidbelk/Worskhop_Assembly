@@ -5,8 +5,6 @@ GREEN='\033[0;32m'
 RED='\033[0;31m'
 RESET='\033[0m'
 
-declare -a generated_executables
-
 for c_file in test_*.c; do
     base_name="${c_file#test_}"
     base_name="${base_name%.c}"
