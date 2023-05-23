@@ -6,7 +6,7 @@ Welcome! In this workshop, you'll receive an introduction to Assembly x86_64
 
 **Basic Requirements**: x86_64 Processor & GCC (assuming you already have them (I hope) if you're here, so we'll skip that part).
 
-You should also have **NASM** installed in order to compile .asm files, although the **compile.sh** script will handle the compilation for you :) 
+You should also have **NASM** installed in order to compile .asm files, although the **"compile"** script will handle the compilation for you :)
 
 
 Here are the commands to install NASM if you haven't already ⬇️.
@@ -15,13 +15,13 @@ For **Ubuntu** users : ```sudo apt-get install nasm```
 
 For **Fedora** users : ```sudo dnf install nasm```
 
-## Format 
+## Format
 **Very Important:**
 To avoid compilation errors when running the scripts and get the expected behavior, you should follow this format when naming your files:
 
 For your **C** files: **test_functionname.c (e.g. : test_strlen.c)**
 
-For your **ASM** files: **functionname.asm (e.g. : strlen.asm)** 
+For your **ASM** files: **functionname.asm (e.g. : strlen.asm)**
 
 ## Usage
 
