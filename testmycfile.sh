@@ -18,14 +18,6 @@ for c_file in test_*.c; do
     fi
 done
 
-if [[ ${#generated_executables[@]} -gt 0 ]]; then
-    for exe in "${generated_executables[@]}"; do
-        echo -e "${GREEN}$exe${NC}${RESET} generated correctly"
-    done
-else
-    echo -e "${RED}No executables generated.${NC}"
-fi
-
 clean() {
     echo "Cleaning up..."
     rm -f *.o *.so "${generated_executables[@]}"
@@ -35,5 +27,13 @@ clean() {
 if [[ "$1" == "clean" ]]; then
     clean
     exit 0
+else
+    if [[ ${#generated_executables[@]} -gt 0 ]]; then
+        for exe in "${generated_executables[@]}"; do
+            echo -e "${GREEN}$exe${NC}${RESET} generated correctly"
+        done
+    else
+        echo -e "${RED}No executables generated.${NC}"
+    fi
 fi
 
