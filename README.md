@@ -45,4 +45,4 @@ The **compile** executable, as the name suggests, compiles the .asm files using 
 
 **What is the purpose of the "testmycfile" executable?**
 
-As mentioned earlier, the .o files will allow us to test the ASM functions with our C files, to make sure that our .asm program works correctly and returns the expected results. Normally, you would have to manually compile your C file with the .o but the script already does it for you (and for all the files simultaneously as long as you follow the **right format naming your files**).
+As mentioned earlier, the .o files will allow us to test the ASM functions with our C files, to make sure that our .asm program works correctly and returns the expected results. Normally, you would have to manually compile your C file with the .o but the **testmycfile** script already does it for you (and for all the files simultaneously as long as you follow the **right format naming your files**).
