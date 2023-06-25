@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 ## Workshop Khalid
 
 GREEN='\033[0;32m'

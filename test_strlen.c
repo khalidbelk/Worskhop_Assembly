@@ -12,7 +12,8 @@ int my_strlen(char *str);
 #include <stdio.h>
 #include <string.h>
 
-int main() {
+int main()
+{
     char *str = "Hello TEK1's !";
     int real_result = strlen(str);
     int our_result = my_strlen(str);
